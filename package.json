@@ -1,5 +1,5 @@
 {
-  "name": "kakaominecraftsyncronize",
+  "name": "kakaominecraftsynchronize",
   "version": "1.0.0",
   "description": "카카오톡과 마인크래프트의 채팅 양방향 동기화",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SemteulGaram/KakaoMinecraftSyncronize.git"
+    "url": "git+https://github.com/SemteulGaram/KakaoMinecraftSynchronize.git"
   },
   "keywords": [
     "kakao",
@@ -18,9 +18,9 @@
   "author": "SemteulGaram",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/SemteulGaram/KakaoMinecraftSyncronize/issues"
+    "url": "https://github.com/SemteulGaram/KakaoMinecraftSynchronize/issues"
   },
-  "homepage": "https://github.com/SemteulGaram/KakaoMinecraftSyncronize#readme",
+  "homepage": "https://github.com/SemteulGaram/KakaoMinecraftSynchronize#readme",
   "devDependencies": {
     "@types/node": "^12.6.9",
     "@types/signale": "^1.2.1",

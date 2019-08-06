@@ -22,6 +22,11 @@
   },
   "homepage": "https://github.com/SemteulGaram/KakaoMinecraftSyncronize#readme",
   "devDependencies": {
+    "@types/node": "^12.6.9",
+    "@types/signale": "^1.2.1",
     "typescript": "^3.5.3"
+  },
+  "dependencies": {
+    "signale": "^1.4.0"
   }
 }

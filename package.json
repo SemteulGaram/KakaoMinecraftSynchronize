@@ -1,6 +1,6 @@
 {
   "name": "kakaominecraftsynchronize",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "카카오톡과 마인크래프트의 채팅 양방향 동기화",
   "scripts": {
     "build": "tsc --build tsconfig.json",

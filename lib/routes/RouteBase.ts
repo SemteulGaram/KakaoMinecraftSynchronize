@@ -48,12 +48,16 @@ export abstract class RouteBase {
     if (paths[1] === 'c') {                 // connection
       this.logger.connect(`${ this.NAME } 연결됨: ${ req.connection.remoteAddress }`);
       res.statusCode = 200;
+      // KakaoBot can't read statusCode :(
+      res.write('CONNECT');
       res.end();
       return;
     } else if (paths[1] === 'u') {          // getUpdate
       // Response blank if queue has no content
       if (this.sendQueue.length === 0) {
         res.statusCode = 204;
+        // KakaoBot can't read statusCode :(
+        res.write('N');
         res.end();
         return;
       }
@@ -160,8 +164,16 @@ export abstract class RouteBase {
             return;
           }
 
+          
+          for (let msg of data.m) {
+            this.logger[this.NAME](msg);
+          }
           // Send messages to target route
-          this.sendMessage(data.m);
+          targetRoute.sendMessage(data.m);
+          
+          res.statusCode = 200;
+          res.write('SUCCESS');
+          res.end();
         } catch (err) {
           this.logger.error('처리되지 않은 오류 발생:', err);
           res.statusCode = 500;

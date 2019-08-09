@@ -47,8 +47,8 @@ export class Config {
 }
 Config.DEFAULT_CONFIG = `{
   "serverPort": 3000,
-  "maxQueueSize": 128,
-  "maxConcurrentTransferCount": 32
+  "maxQueueSize": 8,
+  "maxConcurrentTransferCount": 4
 }`;
 
 export const instance = new Config('./config.json');

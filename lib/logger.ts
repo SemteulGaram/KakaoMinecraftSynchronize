@@ -1,4 +1,5 @@
 import  { Signale } from 'signale';
+import * as RouteName from './types/RouteName';
 
 const options: any = {
   types: {
@@ -38,16 +39,16 @@ const options: any = {
       label: 'Connection',
       logLevel: 'info'
     },
-    k2m: {
+    [RouteName['RouteKakao']]: {
       badge: '*',
       color: 'yellow',
-      label: 'K→M',
+      label: 'Kakao',
       logLevel: 'info'
     },
-    m2k: {
+    [RouteName['RouteMinecraft']]: {
       badge: '*',
       color: 'green',
-      label: 'K←M',
+      label: 'Minecraft',
       logLevel: 'info'
     }
   }

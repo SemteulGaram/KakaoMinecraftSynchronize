@@ -46,7 +46,7 @@ export class Config {
   }
 }
 Config.DEFAULT_CONFIG = `{
-  "serverPort": 3000,
+  "serverPort": 7110,
   "maxQueueSize": 8,
   "maxConcurrentTransferCount": 4
 }`;

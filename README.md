@@ -5,6 +5,7 @@
 ```
 git clone https://github.com/SemteulGaram/KakaoMinecraftSynchronize.git
 cd KakaoMinecraftSynchronize
+npm install
 npm run build
 npm start
 # 컨피스 수정하고 다시 시작하기

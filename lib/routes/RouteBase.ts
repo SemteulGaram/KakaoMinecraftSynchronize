@@ -91,7 +91,7 @@ export abstract class RouteBase {
     } else if (paths[1] === 'm') {          // sendMessage
       // MinecraftMod can send POST message but KakaoBot can't
       if (('' + req.method).toUpperCase() === 'POST') {
-        new Promise((resolve, reject) => {
+        new Promise<void>((resolve, reject) => {
 
           let content: string = '';
           req.on('data', chunk => {
